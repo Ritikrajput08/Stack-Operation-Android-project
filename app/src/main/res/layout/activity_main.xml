@@ -1,0 +1,50 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a value" />
+
+    <Button
+        android:id="@+id/btnPush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etValue"
+        android:layout_marginTop="13dp"
+        android:onClick="pushButtonClicked"
+        android:text="Push" />
+
+    <Button
+        android:id="@+id/btnPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etValue"
+        android:layout_marginTop="76dp"
+        android:onClick="pushButtonClicked"
+        android:text="Pop" />
+
+    <TextView
+        android:id="@+id/tvTopElement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPush"
+        android:layout_marginTop="82dp"
+        android:text="Top Element: "
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/stackContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvTopElement"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
